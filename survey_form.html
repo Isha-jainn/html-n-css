@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application
+    </title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Arial Narrow', Arial, sans-serif;
+            color: rgb(65, 62, 62);
+        }
+        .container{
+            margin: 25px 13px 10px 13px;
+            background-color: rgb(219, 208, 171);
+            height: 1444px;
+            
+
+        }
+        .maincontainer{
+            position: absolute;
+            background-color: #ffffff;
+            border: 2px solid rgb(192, 191, 191);
+            border-radius: 30px;
+            height: 1346px;
+            width: 1000px;
+            margin: 48px 160px;
+        }
+        h1{
+            margin-top: 45px;
+        }
+        .text-center{
+            text-align: center;
+        }
+        #note{
+            margin-left: 20px;
+            font-size: 21px;
+        }
+        .padding{
+            margin: 0px 25px;
+            border: 1px solid rgb(192, 191, 191);
+
+        }
+        legend{
+            font-size: 21px;
+            font-weight: bold;
+        }
+        .checkboxheight{
+            font-size: 20px;
+            padding-bottom: 30px;
+        }
+        .border{
+            border: 1px solid rgb(192, 191, 191);
+            margin: 10px 25px ;
+            padding-left: 16px;
+        }
+        .element{
+            padding: 10px 0px;
+            font-size: larger;
+        }
+        button{
+            background-color: red;
+            color: white;
+            border: none;
+            font-size: 22px;
+        }
+        .label{
+            font-size: large;
+            line-height: 40px;
+        }
+        .fsize{
+            font-size: 22px;
+        }
+        #text2{
+            margin-bottom: 0px;
+        }
+        #para{  
+             font-size: larger;
+             margin-bottom: 40px;
+        }
+        .box{
+            margin: 0px;
+            width: 355px;
+            height: 70px;
+        }
+        #sendbtn{
+            margin: 12px 386px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="maincontainer">
+            <h1 class="text-center">Application For Permission To Date My Daughter</h1>
+            <p id="note"><strong> Note:</strong> Form is to be completed at least 21 days prior to date</p>
+            <form>
+                <fieldset class="padding">
+                    <legend>Personal Details</legend>
+                    <div class="element">
+                        <label for="name">Name: </label>
+                        <input id="name" type="text" name="name" placeholder="Enter name here">
+                    </div>
+                    <div class="element">
+                        <label for="address">Address: </label>
+                        <input id="address" type="text" name="address" placeholder="Enter address here">
+                    </div>
+                    <div class="element">
+                        <label for="email">Email: </label>
+                        <input id="email" type="email" name="email" placeholder="Enter email here">
+                    </div>
+                    <div class="element">
+                        <label for="number">Phone Number: </label>
+                        <input id="number" type="number" name="number" placeholder="Enter 10 digit number">
+                    </div> 
+                    <div class="element">
+                        <label for="iq">IQ: </label>
+                        <input id="iq" type="text" name="iq" placeholder="Enter IQ here">
+                    </div>
+                    <label class="label">Gender</label><br>
+                    <input type="radio" id="male" name="gender" value="Male" checked>
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label><br>
+                    <input type="radio" name="gender" value="Other">
+                    <label for="other">Other</label><br>
+                <div class="element">
+                    <label class="label" for="Date">Date of Proposed Outing: </label>
+                    <input id="name" type="date" name="date">
+                </div>
+            </fieldset>
+                <div class="border">
+                    <label class="label">Check All That Apply</label><br>
+                    <div class="checkboxheight">
+                    <input type="checkbox">I have tattoos and/or piercings<br>
+                    <input type="checkbox">I am more than 2 years older than my daughter<br>
+                    <input type="checkbox"> I own a panel van or V8 ute<br>
+                    <input type="checkbox" checked> I work full-time<br>           
+                    <input type="checkbox" checked>  My parents are rich<br>
+                    <input type="checkbox" checked> Is the date at a well lit public location<br>
+                </div>
+                </div>
+                <div class="border">
+                    <label class="label">Political Persuation: </label>
+                    <select>
+                        <option value="Left Wing" selected>Left Wing</option>
+                        <option value="Right Wing">Right Wing</option>
+                        <option value="Conservative">Conservative</option>
+                        <option value="Nazi">Nazi</option>
+                    </select>
+                    <label class="label">Education level completed:</label>
+                    <select>
+                        <option value="University" selected>University</option>
+                        <option value="College">College</option>
+                        <option value="High School">High School</option>
+                        <option value="None">None</option>
+                    </select>
+                </div> 
+                    <fieldset class="padding">
+                    <legend>Essay Section</legend>
+                    <p class="fsize">In 50 words or more explain why you want to date my daughter</p>
+                    <textarea class="box" placeholder="Enter Text here"></textarea>
+                    <p class="fsize" id="text2">Please upload contact details for 2 references</p>
+                    <textarea class="box" placeholder="Enter Text here"></textarea>
+                    <p id="para">Upload Police Clearance Certificate, Bank Statement and Medical Certifiates here:
+                        <button>Attach Files</button>
+                    </p>
+                </fieldset>
+                <button id="sendbtn" type="submit">Send Your Application</button>
+                </div>
+            </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
