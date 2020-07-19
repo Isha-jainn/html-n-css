@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steve Jobs</title>
+    <style>
+        body{
+            margin: 2px 100px 50px 100px ;
+            padding: 0px;
+            text-align: center;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-areas: 'header  header '
+                                 'section  aside '
+                                 'footer  footer' ;
+            margin-bottom: 20px;
+        }
+        header{
+            grid-area: header;
+        }
+        section{
+            display: grid;
+            grid-area: section;
+            grid-template-columns: 115px 700px;
+            margin:0px 30px 20px 0px;
+        }
+        .grid-item1{
+            border-bottom: 1px solid  rgb(202, 202, 202);
+            font-weight: bold ;
+            padding: 10px;
+        }
+        .item1{
+            grid-column:1/3 ;
+            grid-row: 1/3;
+        }
+        #tableheading{
+            font-size: 55px;
+            opacity: 0.1;
+        }
+        .sectionitembackground{
+            border-top: 1px solid rgb(202, 202, 202);
+            border-bottom: 1px solid  rgb(202, 202, 202);
+            background-color: rgb(221, 221, 221) ;
+            text-align: left;
+            padding:5px;
+        }
+        .lastgrid-item{
+            border-top: 1px solid rgb(192, 185, 185);
+            padding: 5px;
+            font-weight: bold ;
+        }
+        .grid-item2{
+            font-weight: bold;
+            padding:10px;
+        }
+        .grid-item2-1{
+            border-bottom:1px solid rgb(202, 202, 202);
+        }
+        aside{
+            display: grid;
+            grid-area: aside;
+            grid-template-columns: 100px auto;
+            margin:170px 0px 50px 20px;
+        }
+        .asideitem1{
+            grid-column:1/3 ;
+        }
+        #image2{
+            height: 220px;
+            width: 220px;
+        }
+        #sideheading{
+            margin-bottom: 5px;
+        }
+        footer{
+            grid-area: footer;
+            background-color: rgb(219, 228, 230);
+            text-align: center;
+            padding: 0px 185px;
+        }
+        #mainimage{
+            height: 650px;
+            width: 980px ;
+            }
+        #mainimagecaption{
+            font-family: cursive;
+            font-size: 21px;
+            font-weight: bolder;
+            line-height: 3;
+        }
+        #quote{
+            font-style: italic;
+            font-size: 25px;
+            font-weight: 600;
+            font-family: cursive;
+            margin: 10px 0px 0px 0px;
+        }
+        #name{
+            font-weight: 100;
+            font-style: italic ;
+            font-size: 25px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 5px 0px 30px 0px;
+        }
+        #formore{
+            font-size: 20px;
+            font-family: sans-serif;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <header>
+            <figure>
+                <img id="mainimage" src="steve-jobs.jpg" alt="Steve Jobs"/>
+                <figcaption id="mainimagecaption">The people who are crazy enough to think they can change the world are the ones who do.</figcaption>
+            </figure>
+        </header>
+        <section>
+            <div class="grid-item1 item1"><h1 id="tableheading">TIMELINE</h1></div>
+            <div class="grid-item1">24 Feb 1955</div>
+            <div class="sectionitembackground">Steven Paul was born in San Francisco, the son of Abdulfattah Jandali and Joanne Schieble. He is quickly adopted by Paul and Clara Jobs</div>
+            <div class="grid-item1">1969</div>
+            <div class="sectionitembackground">Steve Jobs meets Steve Wozniak, 5 years older, through a mutual friend. Woz and Steve share a love of electronics, Bob Dylan, and pranks</div>
+            <div class="grid-item1">Mar 1976</div>
+            <div class="sectionitembackground">Woz and Steve show the early Apple I board at the Homebrew Computer Club</div>
+            <div class="grid-item1">28 Aug 1976</div>
+            <div class="sectionitembackground">Steve Jobs and Woz show off the Apple I at the Personal Computing Festival in Atlantic City, with help from Dan Kottke</div>
+            <div class="grid-item1">1978</div>
+            <div class="sectionitembackground">At Apple, work starts on the Apple III and the Lisa, while Jef Raskin begins The Book of Macintosh</div>
+            <div class="grid-item1">May 1980</div>
+            <div class="sectionitembackground">Apple launches the Apple III, which will prove a disastrous flop</div>
+            <div class="grid-item1">Jan 1983</div>
+            <div class="sectionitembackground">Launch of the Lisa computer. The Lisa team later merges with the Mac team under Steve Jobs's leadership</div>
+            <div class="grid-item1">8 Apr 1983</div>
+            <div class="sectionitembackground">PepsiCo CEO John Sculley becomes Apple's CEO after having been wooed by Steve Jobs for several months</div>
+            <div class="grid-item1">17 Sep 1985</div>
+            <div class="sectionitembackground">Steve Jobs resigns from Apple and starts NeXT with five other refugees from Apple. Apple announces it will sue NeXT</div>
+            <div class="grid-item1">Dec 1996</div>
+            <div class="sectionitembackground">Apple, which was desperately looking for a modern operating system to buy, eventually buys NeXT for $400 million. Steve Jobs is named "informal adviser" to Apple CEO Gil Amelio</div>
+            <div class="grid-item1">6 May 1998</div>
+            <div class="sectionitembackground">Steve Jobs introduces Apple's revolutionary iMac at the Flint Center auditorium in Cupertino, 14 years after he had introduced the Macintosh at that same place</div>
+            <div class="grid-item1">5 Oct 1999</div>
+            <div class="sectionitembackground">Introduction of the iMac DVs and of iMovie, the first of Apple's first Digital Hub app</div>
+            <div class="grid-item1">28 Apr 2003</div>
+            <div class="sectionitembackground">Apple opens the revolutionary online iTunes Music Store in the US, after negotiating landmark deals with all major music labels</div>
+            <div class="grid-item1">15 Jan 2008</div>
+            <div class="sectionitembackground">At Macworld 2008, Steve Jobs introduces MacBook Air, with the tagline 'the world's thinnest notebook'. Three years later, it will come to redefine all of Apple's notebook product line</div>
+            <div class="grid-item1">24 Aug 2011</div>
+            <div class="sectionitembackground">Steve Jobs resigns as CEO of Apple, with the words 'I have always said if there ever came a day when I could no longer meet my duties and expectations as Apple's CEO, I would be the first to let you know. Unfortunately, that day has come.' Tim Cook becomes Apple CEO</div>
+            <div class="lastgrid-item">5 Oct 2011</div>
+            <div class="sectionitembackground">Steve Jobs dies at home, surrounded by his family</div>
+        </section>  
+        <aside>
+            <div class="asideitem1">
+                <h1 id="sideheading">IN A NUTSHELL</h1>
+                <img id="image2" src="steve-jobs2.jpg" alt="steve-jobs"/>
+            </div>
+            <div class="grid-item2">Born</div>
+            <div class="grid-item2-1">Steven Paul Jobs<br>February 24, 1955<br>San Francisco, California, U.S</div>
+            <div class="grid-item2">Died</div>
+            <div class="grid-item2-1">October 5, 2011 (aged 56)<br>Palo Alto, California, U.S.</div>
+            <div class="grid-item2">Occupation</div>
+            <div class="grid-item2-1">Co-founder, Chairman, and CEO of Apple Inc.<br>Primary investor and CEO of Pixar<br>Founder and CEO of NeXT</div>
+            <div class="grid-item2">Parents</div>
+            <div class="grid-item2-1">Paul Jobs (adoptive father)<br>Clara Jobs (adoptive mother)<br>Abdulfattah Jandali (biological father)<br>Joanne Schieble Simpson (biological mother)</div>
+            <div class="grid-item2">Children</div>
+            <div class="grid-item2-1">with Brennan;<br>
+                Lisa Brennan (b. 1978)<br>
+                with Powell;<br>
+                Reed Jobs (b. 1991)<br>
+                Erin Jobs (b. 1995)<br>
+                Eve Jobs (b. 1998)</div>
+            <div class="grid-item2">Cause of death</div>
+            <div class="grid-item2-1">Pancreatic cancer and
+                respiratory arrest</div>
+        </aside>
+        <footer>
+            <p id="quote">"Have the courage to follow your heart and intuition. They somehow know what you truly want to become."</p>
+            <p id="name">-STEVE JOBS</p>
+            <p id="formore">Do read more about this impeccable personality <a href="https://en.wikipedia.org/wiki/Steve_Jobs">here</a>.</p>
+        </footer>
+    </div>
+</body>
+</html>
