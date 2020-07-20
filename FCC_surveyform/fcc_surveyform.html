@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC: Survey Form</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+            background: url('laptop.jpg') no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            text-align: center;
+            color: white;
+        }
+        section{
+            position:absolute;
+            height: auto;
+            width: auto;
+            left: 330px;
+            right: 330px;
+            background-color: rgba(27,27,50,0.8);
+            border-radius: 5px;
+            text-align: left;
+            padding: 20px 30px 20px 30px;
+            font-size: larger;
+            font-family: sans-serif;
+        }
+        .textbox{
+            margin: 20px 0px;
+        }
+        #btn{
+            background-color: rgb(40, 189, 119);
+            padding: 12px 30px;
+            color: white;
+            border: none;
+            font-size: 18px;
+        }
+        label{
+            display: block;
+        }
+        textarea{
+            height: 90px;
+        }
+        .box {
+               width: 608px;
+               padding: 10px;
+               border: none;
+               margin: 8px 30px 0px 0px;
+               border-radius: 5px;
+            }
+        .selectbox{
+            width: 629px;
+            padding: 10px;
+            border: none;
+            margin: 8px 30px 0px 0px;
+            border-radius: 5px;
+
+        }
+        .options{
+            margin: 9px 10px;
+        }
+        ::placeholder{
+            /* color:red; */
+            font-size: 17px;
+        }
+        h1{
+            font-size: 30px;
+            font-family: cursive;
+            margin-top: 35px;
+            margin-bottom: 0px;
+        }
+        p{
+            font-family: cursive;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>freeCodeCamp Survey Form</h1>
+        <p><em>Thank you for taking the time to help us improve the platform</em></p>
+    </header>
+    <section>
+        <form>
+            <div class="textbox">
+            <label for="name">Name</label>
+            <input class="box" id="name" type="text" name="name" placeholder="Enter your name"/>
+            </div>
+            <div class="textbox">
+            <label for="email">Email</label>
+            <input class="box" id="email" type="email" name="email" placeholder="Enter your Email"/>
+            </div>
+            <div class="textbox">
+            <label for="age">Age(optional)</label>
+            <input class="box" id="age" type="number" name="age" placeholder="Enter your Age"/>
+            </div>
+            <div class="textbox">
+            <label>Which option best describes your current role?</label>
+            <select class="selectbox">
+                <option>Select current role</option>
+                <option>Student</option>
+                <option>Full Time Job</option>
+                <option>Full Time learner</option>
+                <option>Prefer not to say</option>
+                <option>Other</option>
+            </select>
+            </div>
+            <div class="textbox">
+            <label>Would you recommend free code camp to your friend?</label>
+            <input class="options" type="radio" value="Definitely" name="recommend" checked/>Definitely<br>
+            <input class="options" type="radio" value="Maybe" name="recommend"/>Maybe<br>
+            <input class="options" type="radio" value="Not Sure" name="recommend"/>Not Sure<br>
+            </div>
+            <div class="textbox">
+            <label>What is your favorite feature of freeCodeCamp?</label>
+            <select class="selectbox">
+                <option>Select an option</option>
+                <option>Challenges</option>
+                <option>Projects</option>
+                <option>Community</option>
+                <option>Open Source</option>
+            </select>
+            </div>
+            <div class="textbox">
+            <label>What would you like to see improved? (Check all that apply)</label>
+            <input class="options" type="checkbox" value="Front-end Projects"/>Front-end Projects<br>
+            <input class="options" type="checkbox" value="Back-end Projects"/>Back-end Projects<br>
+            <input class="options" type="checkbox" value="Data Visualization"/>Data Visualization<br>
+            <input class="options" type="checkbox" value="Challenges"/>Challenges<br>
+            <input class="options" type="checkbox" value="Open Source Community"/>Open Source Community<br>
+            <input class="options" type="checkbox" value="Gitter help rooms"/>Gitter help rooms<br>
+            <input class="options" type="checkbox" value="Videos"/>Videos<br>
+            <input class="options" type="checkbox" value="City Meetups"/>City Meetups<br>
+            <input class="options" type="checkbox" value="Wiki"/>Wiki<br>
+            <input class="options" type="checkbox" value="Forum"/>Forum<br>
+            <input class="options" type="checkbox" value="Additional Courses"/>Additional Courses<br>
+            </div>
+            <div class="textbox">
+            <label>Any comments or suggestions?</label>
+            <textarea class="box" placeholder="Enter your comment here..."></textarea>
+            </div>
+            <div class="textbox">
+            <input class="selectbox" id="btn" type="submit" value="Submit">
+            </div>
+        </form>
+    </section>
+</body>
+</html>
